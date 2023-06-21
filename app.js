@@ -69,9 +69,9 @@ INSERT INTO district (district_name,
   (
       '${districtName}',
       ${stateId},
-      '${cases},
+      ${cases},
       ${cured},
-      '${active}',
+      ${active},
     ${deaths},
     ;`;
   const dbResponse = await db.run(addDistricts);
